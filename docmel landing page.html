@@ -1,0 +1,483 @@
+
+
+<!DOCTYPE html>
+
+<style>
+
+
+@import "https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400,700";
+@import "https://fonts.googleapis.com/css?family=Niconne:400,700";
+@import "https://fonts.googleapis.com/css?family=Courgette:400,700";
+@import "https://fonts.googleapis.com/css?family=Lobster:400,700";
+@import "https://fonts.googleapis.com/css?family=Luckiest+Guy:400,700";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C0C0A8;
+  font-family: "Big Shoulders Text", sans-serif;
+  font-size: 1.3em;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/** global classes styling **/
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 150%;
+  height: 95%;
+  max-width: 398px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+ .small-border {
+  border-color: rgba(193,67,67,0.8);
+    border-width: 0.49px;
+    border-style: solid;
+    border-radius: 6px;
+   
+    
+    
+}
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 75px;
+}
+
+#hero > h2 {
+  margin-bottom: 25px;
+  word-wrap: break-word;
+}
+
+#hero input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+  font-family: Courgette;
+  font-size: 0.65em;
+}
+
+#hero input[type="submit"] {
+  max-width: 155px;
+  width: 105%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  font-family: Lobster;
+  font-weight: thin;
+  color: white;
+  font-size: 0.9em;
+  letter-spacing: 2.5px;
+  background-image: url(moon.jpg);
+}
+
+#hero input[type="submit"]:hover {
+  background-image: url(stars3.jpg);
+  transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 120px;
+  }
+}
+
+#features {
+  margin-top: 30px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+}
+
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 10px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 20px 0;
+  background-image: url(moon.jpg);
+  color: ivory;
+  font-family: "Luckiest Guy";
+  font-weight: thin;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.product > button:hover {
+  background-image: url(stars3.jpg); no-repeat;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+  font-family: Niconne;
+  
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.1em;
+  color: rgba(193,67,67,0.8);
+}
+
+
+
+
+
+</style>
+
+
+
+
+
+<!--                    HTML                -->
+
+
+
+<div id="page-wrapper">
+  <header id="header">
+    <div class="logo">
+      <img
+        id="header-img"
+        class="small-border"
+        src="symbol3.jpg"
+        alt="Dr. Mel's Office logo"
+      />
+    </div>
+
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#pricing">Practice Areas</a></li>
+        <li><a class="nav-link" href="#pricing">Book Visit</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container"></div>
+
+  <section id="hero">
+    <h2>Professional , General Medical Care</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="submit" class="btn" />
+    </form>
+  </section>
+
+  <div class="container">
+    <section id="features">
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+        <div class="desc">
+          <h2>Premium Care</h2>
+          <p>
+            Our medical professionals undergo an intense screening in order to practice with us , we select the medical professionals that have proven
+high ethical standards along with a highe degree of medical knowledge and skill.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+        <div class="desc">
+          <h2>Fast Booking System</h2>
+          <p>
+            We understand that your time is very valuable , we have a state of the art software that allows for calls and online booking to interact smoothly
+to get you to the service that you need in the minimum amount of time .
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
+          <h2>High Quality Prescriptions In-Office</h2>
+          <p>
+            We understand the need to simplify the process of restoring wellbeing to your body as much as possible , for that we were recently  granted an Authorized Prescription Dispenser License that allows to have prescriptions in our office, so you can get your prescriptions from us  thus saving you time , our prescriptions are of the highest quality and made by the best laboratories
+of the world.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works">
+      <video id="video" height="370px" width="650px" controls="controls" poster="symbol3.jpg">
+      <source src="Dr Mel1.mp4" video="web/mp4">
+        </video>
+    </section>
+    <section id="pricing">
+      <div class="product" id="tenor">
+        <div class="level">"Flu" Check</div>
+        <h2>$60</h2>
+        <ol>
+          <li>General throat and nose ailments.</li>
+          <li>45-90 minutes.</li>
+          <li>Prescriprions available in-office.</li>
+          <li>Arrive 15 minutes early.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="bass">
+        <div class="level">FOOD POISONING</div>
+        <h2>$150</h2>
+        <ol>
+          <li>Ailments related to digestive system.</li>
+          <li>45-90 minutes.</li>
+          <li>Prescriptions available in-office.</li>
+          <li>Arrive 15 minutes early.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="valve">
+        <div class="level">Eczema and skin irritations</div>
+        <h2>$150</h2>
+        <ol>
+          <li>Ailments related to mild skin conditions</li>
+          <li>45-90 minutes</li>
+          <li>Prescriptions available in-office.</li>
+          <li>Arrive 15 minutes early.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>&copy 2019. Website by Kaiser Santosvictorious. <br>
+Battlegriffin Software Co. - Redmond , Wa, USA.</span>
+    </footer>
+  </div>
+</div>
+
+
+
