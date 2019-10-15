@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+#container {
+  margin: 0 auto;
+  width: auto;
+  max-width:500px;
+  height: auto;
+  background: rgb(0, 0, 0);
+  padding: 20px;
+  border: 10px rgb(68, 7, 38) solid;
+  background-image: url("bg5.jpg");
+}
+
+body {
+  background: rgb(126, 13, 69);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: rgb(126, 13, 69);
+
+}
+
+h1 {
+  font-size: 200%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+p {
+  font-size: 180%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+button { 
+  background-color:rgb(180, 57, 118);
+  color:rgb(0, 0, 0);
+  width:100%;
+  max-width:200px;
+  margin: 0 auto;
+  /* height: 100%;
+  max-height: 50px; */
+  font-size: 200%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  border: 5px rgb(126, 13, 69) solid;
+  border-radius: 49px;
+  vertical-align: 0 auto;
+  opacity: 0.7; 
+}  
+
+.buttonLeft { 
+  background-color:rgb(180, 57, 118);
+  color:rgb(0, 0, 0);
+  width:100%;
+  max-width:200px;
+  margin: 0 auto;
+  /* height: 100%;
+  max-height: 50px; */
+  font-size: 200%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  border: 5px rgb(126, 13, 69) solid;
+  border-radius: 49px;
+  vertical-align: 0 auto;
+  opacity: 0.7; 
+}  
+
+.buttonLeftcontainer {
+  /* margin: 0 auto; */
+  float: left;
+  width: 40%;
+  max-width:350px;
+  /* height: auto; */
+  /* background: rgb(68, 7, 38); */
+  padding: 20px;
+  /* border: 10px rgb(0, 0, 0) solid; */
+}
+
+.buttonRightcontainer  {
+  /* margin: 0 auto; */
+  float: right;
+  width: 40%;
+  max-width:350px;
+  height: auto;
+  /* background: rgb(68, 7, 38); */
+  padding: 20px;
+  /* border: 10px rgb(0, 0, 0) solid; */
+}
+
+
+button:hover {
+  opacity: 1;  }
+button:active {
+  background: rgb(83, 8, 46); }
+
+input[
+  type='range']::-webkit-slider-thumb {
+    vertical-align: middle;
+    -webkit-appearance: none;
+    background-color:rgb(0, 0, 0);
+    width: 40px;
+    height: 40px;
+    border-radius: 49px;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+  height: 100%; 
+  text-align: center;
+  float: bottom;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; 
+  max-width: 450px;
+  height: 40px; 
+  background: rgba(180, 57, 118); 
+  outline: none; 
+  opacity: 0.7; 
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
+  border: 5px rgb(126, 13, 69) solid;
+  border-radius: 49px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 35px; /* Set a specific slider handle width */
+  height: 35px; /* Slider handle height */
+  background: rgb(25, 94, 27); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 35px; /* Set a specific slider handle width */
+  height: 35px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
+
+
+
+
+
+
+
+</style>
+<head>
+  <meta charset="utf-8">
+  <title>Spaghetti Code Music Player</title>
+  <link rel="icon" href="icon3.ico">
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+     <script>
+    // Trying out to make it work for touch
+        window.onload = function() {
+          this.addEventListener('mousemove', function(e) {
+          var x = e.clientX;
+          var y = e.clientY;
+          event.preventDefault(); // we don't want to scroll
+          var touch = event.touches[0];
+          var xt = touch.clientX;
+          var yt = touch.clientY;
+          var width = window.innerWidth;
+          //adding height
+          var height = window.innerHeight;
+          //console.log(width);
+          var widthnor = (x/width); // 0-1 range
+          var heightnor = (y/height);
+          var widthnortouch = (xt/width); // 0-1 range
+          var heightnortouch = (yt/height);
+          // console.log(widthnor*1500);
+          // console.log(heightnor*50);
+          //console.log(x, y);
+          if (playing == 1) {
+            //oscillator.frequency.value = x;
+            filter.frequency.value = widthnor*1500;
+            filter.Q.value = heightnor*50; 
+            filter.frequency.value = widthnortouch*1500;
+            filter.Q.value = heightnortouch*50; 
+          }
+          });
+        }
+        </script>  
+
+</head>
+<body>
+    <div id="container">
+<h1>Spaghetti Code Music Player 2</h1>
+<div class="buttonLeftcontainer">
+<button type="button"  id="button1" class="buttonLeft">Song1</button>
+<br />
+<br />
+<button type="button"  id="button3" class="buttonLeft">Song2</button>
+<br />
+<br />
+<button type="button"  id="button5" class="buttonLeft">Song3</button>
+</div>
+<div class="buttonRightcontainer">
+<button type="button"  id="button2" class="buttonRight">Song4</button>
+<br />
+<br />
+<button type="button"  id="button4" class="buttonRight">Song5</button>
+<br />
+<br />
+<button type="button"  id="button6" class="buttonRight">Song6</button>
+</div>
+<br />
+<!-- <p>Volume: </p> -->
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+</div>
+
+<script>
+    var AudioContext = window.AudioContext || window.webkitAudioContext;    
+    var slider = document.getElementById("myRange");
+    var volume;
+    var context, player, delay, delayAmount, filter;
+    var playing = 0;
+    document.querySelector("#button1").addEventListener('click', function() {
+    context = new AudioContext();
+    
+    // create a sound input node from an audio sample
+    player = context.createBufferSource();
+    player.loop = true;
+    // create a delay effect node
+    delay = context.createDelay();
+    delay.delayTime.value = 0.5; // lenght of the delay
+    // create a gain effect node
+    delayAmount = context.createGain();
+    // delayAmount.gain.value = 0.5; // amount of the effect
+    volume = context.createGain();
+    // create filter node
+    filter = context.createBiquadFilter();
+    filter.type = "highpass";
+    filter.frequency.value = 0;
+    filter.Q.value = 0
+    // play the sound
+    loadSound("a2.mp3");
+    
+    // connect the different nodes
+    player.connect(volume);    
+    volume.connect(context.destination);
+    playing = 1;
+    volume.gain.value = 0.5;
+  });
+  slider.oninput = function() {
+  var normalizeNum = this.value / 100;
+  volume.gain.value = normalizeNum; // mapping the effect
+  // output.innerHTML = this.value;
+  console.log(normalizeNum);
+  }
+  document.querySelector("#button2").addEventListener('click', function() {
+    player.stop();
+    playing = 0;
+  });
+  document.querySelector("#button3").addEventListener('click', function() {
+    player.connect(delay);
+    delay.connect(delayAmount);
+    delayAmount.connect(volume);
+    volume.connect(context.destination);
+  });
+  document.querySelector("#button4").addEventListener('click', function() {
+    player.disconnect(delay);
+    delay.disconnect(delayAmount);
+    delayAmount.disconnect(context.destination);
+  });
+  document.querySelector("#button5").addEventListener('click', function() {
+    player.connect(filter);
+    filter.connect(delayAmount);
+    delayAmount.connect(volume)
+    volume.connect(context.destination);
+  });
+  document.querySelector("#button6").addEventListener('click', function() {
+    player.disconnect(filter);
+    filter.disconnect(delayAmount);
+    delayAmount.disconnect(context.destination);
+  });
+// Method 1 
+  function loadSound(soundfile) {
+  var request = new XMLHttpRequest();
+  request.open('GET', soundfile, true);
+  request.responseType = 'arraybuffer';
+  // Decode asynchronously
+  request.onload = function() {
+    context.decodeAudioData(request.response, function(buffer) {
+      player.buffer = buffer;
+      player.start();
+    }, onError);
+  }
+  request.send();
+  
+}
+function onError(){
+  console.log("The file could not be loaded");
+}
+  
+</script>
+
+
+</body>
