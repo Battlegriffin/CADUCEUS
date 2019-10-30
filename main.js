@@ -18,7 +18,6 @@ navLinks.forEach((link) => {
 });
 
 function closeNavSlider() {
-	console.log('Bravata');
     navSliderSection.classList.remove('openNav');
     navSliderSection.classList.add('closeNav');
 
