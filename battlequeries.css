@@ -1,0 +1,275 @@
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .title-background {
+        width: 38%;
+    }
+
+    .img {
+        width: 50%;
+    }
+
+    .openNav {
+        animation: openNav 0.5s forwards;
+    
+    }
+
+    .closeNav {
+        animation: closeNav 0.5s forwards;
+    }
+
+    @keyframes openNav {
+        100% {
+            transform: translateX(0%);
+        }
+    }
+    
+    @keyframes closeNav {
+        0% {
+            transform: translateX(0%);
+        }
+    
+        100% {
+            transform: translateX(-100%);
+        }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+   
+    .title-background {
+        width: 38%;
+    }
+
+    .img {
+        margin: 3% auto;
+        width: 50%;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) */
+    /* min-width 824px */
+@media (min-width: 51.5rem) { 
+    h2 {
+        font-size: 2rem;
+    }
+    .img {
+        margin: 5% auto;
+        width: 30%;
+    }
+
+    .close-nav-slider {
+        border: none;
+        outline: none;
+        float: right;
+        background: transparent;
+        color: rgba(130, 172, 197, 0.5);
+        font-size: 1.1em;
+        padding: 15px;
+        cursor: pointer;
+    }
+    
+    #close-nav-slider-background {
+        background-color: rgba(221, 76, 19, 0.158);
+        width: fit-content;
+        position: relative;
+        right: 0.8%;
+        margin: 6.1px;
+        border-radius: 0.9375rem;
+        border-style: solid;
+        border-width: 0.04375rem;
+        border-color: rgba(19, 214, 221, 1.7);
+    }
+    
+
+     #navbar {
+
+        
+
+         /* position: fixed;
+        top: 0.8125rem;
+        left: 1.25rem;
+        width: 30%;
+        height: 10%;
+        background-color: #7b1d3d; */
+        
+    } 
+
+    nav ul {
+        margin: 0px;
+        padding: 0.3125rem 0px 0.3125rem 3.125rem;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 0.625rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: "Oleo Script";
+    }
+
+    nav:hover {
+        transform: scale(1.02);
+    }
+
+    .rcorners1 {
+        border-radius: 0.9375rem 3.125rem;
+        border-style: solid;
+        border-width: 0.214375rem;
+        border-color: rgba(0, 0, 0, 17);
+        padding: 1.25rem;
+        width: 18.75rem;
+        height: 3.75rem;
+    } */
+
+    #Menus {
+        background: #000;
+    }
+
+    .menu-title {
+        color: #d0d3d4;
+        text-align: center;
+        padding: 1.5625rem;
+        font-size: 1.1em;
+    }
+
+    p {
+        color: #eee;
+    }
+
+    
+  }     
+
+  
+
+/* // Extra large devices (large desktops, 1200px and up) */
+    /* min-width 1371px */
+
+
+
+
+
+        
+
+/* TRANSFORMATION STATION  */
+/* min width 1371px  */
+@media (min-width: 85.6875rem) {
+
+    
+
+    
+
+    .title-background {
+        /* background: rgba(0, 0, 0, 0.75);
+        position: relative; */
+        top: 3.75%;
+        width: fit-content;
+        margin: auto;
+        padding: 0.9375rem;
+        /* border-radius: 0.9375rem 3.125rem; */
+        /* border-style: solid; */
+        border-width: 0.1521875rem;
+        /* border-color: rgba(0, 0, 0, 17); */
+    }
+
+}
+
+
+
+/* min-width 1370px */
+@media screen and (min-width: 85.625rem) {
+    .info-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .address-content,
+    .business-hours {
+        border-right: 0.0625rem solid #eee;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0.8125rem;
+        left: 1.25rem;
+        width: 34%;
+        height: 10%;
+        background-color: #7b1d3d;
+        /* < !--background-color: rgba(193, 67, 67, 5);
+        --> */
+    }
+
+    nav ul {
+        margin: 0px;
+        padding: 0.3125rem 0px 0.3125rem 3.125rem;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 0.625rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: "Oleo Script";
+    }
+
+    nav:hover {
+        transform: scale(1.02);
+    }
+
+    .rcorners1 {
+        border-radius: 0.9375rem 3.125rem;
+        border-style: solid;
+        border-width: 0.214375rem;
+        border-color: rgba(0, 0, 0, 17);
+        padding: 1.25rem;
+        width: 18.75rem;
+        height: 3.75rem;
+    }
+
+    #Menus {
+        display: none;
+    }
+
+    .nav-slider {
+        display: none;
+    }
+
+    /* #navbar {
+        display: none;
+    } */
+
+    
+    .line:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .openNav {
+        animation: openNav 0.5s forwards;
+    }
+
+    .closeNav {
+        animation: closeNav 0.5s forwards;
+    }
+
+    .title-background {
+        background: rgba(0, 0, 0, 0.75);
+        position: relative;
+        top: 3.75%;
+        width: fit-content;
+        margin: auto;
+        padding: 0.9375rem;
+        border-radius: 0.9375rem 3.125rem;
+        border-style: solid;
+        border-width: 0.2146875rem;
+        border-color: rgba(0, 0, 0, 17);
+    }
+}
