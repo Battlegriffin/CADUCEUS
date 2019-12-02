@@ -1,10 +1,12 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CarSant</title>
+    <title>CarSant Gateway</title>
 </head>
     <style>
         .rcorners {
@@ -21,6 +23,14 @@
   padding: 20px;
 
 }
+        .mainLoginInput::-webkit-input-placeholder { 
+  font-family: Lobster, Arial, Helvetica, sans-serif;
+}
+
+.mainLoginInput:-moz-placeholder { 
+  font-family: Lobster, Arial, Helvetica, sans-serif;
+}
+        
     </style>
 <body>
     <body bgcolor="#c0c2ab">
@@ -42,10 +52,10 @@
             <br>
             <br>
             <br>
-        <input type="text" id="username" class="rcorners" required placeholder="Username"/>
+        <input type="text" id="username" class="rcorners, mainLoginInput" required placeholder="Username"/>
         <br>
         <br>
-        <input type="password" id="password" class="rcorners" required placeholder="Password"/>
+        <input type="password" id="password" class="rcorners, mainLoginInput" required placeholder="Password"/>
         <br>
         <br>
         <button class="rcorners2" onclick="validation();">LOGIN</button>
