@@ -1,4 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,6 +32,16 @@
   font-family: Lobster, Arial, Helvetica, sans-serif;
 }
         
+           .mainLoginInput1::-webkit-input-placeholder { 
+  font-family: Handlee, Arial, Helvetica, sans-serif;
+  color: #900C3F;
+}
+
+.mainLoginInput1:-moz-placeholder { 
+  font-family: Handlee, Arial, Helvetica, sans-serif;
+  color: #900C3F;
+}
+        
     </style>
 <body>
     <body bgcolor="#c0c2ab">
@@ -58,7 +69,7 @@
         <input type="password" id="password" class="rcorners mainLoginInput" required placeholder="Password"/>
         <br>
         <br>
-        <button class="rcorners2" onclick="validation();">LOGIN</button>
+        <button class="rcorners2 mainLoginInput1" onclick="validation();">LOGIN</button>
     </form>
     </center>
     <script>
