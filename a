@@ -1,0 +1,107 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ͼ✠CarSant Gateway✠Ͼ</title>
+    <link rel="icon"  type="image/jpg" href="carsanter.JPG">
+</head>
+    <style>
+        .rcorners {
+  border-radius: 15px 50px;
+  background: #C4A1AA;
+  padding: 20px;
+  width: 200px;
+  height: 30px;
+}
+        
+        .rcorners2 {
+  border-radius: 15px;
+  background: #41BBDC;
+  padding: 20px;
+}
+        .mainLoginInput::-webkit-input-placeholder { 
+  font-family: Lobster, Arial, Helvetica, sans-serif;
+  color: #C3345D;
+}
+.mainLoginInput:-moz-placeholder { 
+  font-family: Lobster, Arial, Helvetica, sans-serif;
+  color: #C3345D;
+}
+        
+           .fun { 
+  font-family: Handlee, Arial, Helvetica, sans-serif;
+  color: #900C3F;
+  font-size: 22px;
+}
+        .footer {
+color: #75102d !important;
+font-family: Niconne !important;
+font-size: 21px;
+font-weight: 1;
+}
+        
+    </style>
+<body>
+    <body bgcolor="#c0c2ab">
+<center>
+    <form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            
+        <input type="text" id="username" class="rcorners mainLoginInput" required placeholder="Username"/>
+        <br>
+        <br>
+        <input type="password" id="password" class="rcorners mainLoginInput" required placeholder="Password"/>
+        <br>
+        <br>
+        <button class="rcorners2" onclick="validation();"><span class="fun">Log In</span></button>
+    </form>
+    </center>
+    <script>
+        function validation ()
+        {
+            var username = "Kaiser Santosvictorious";
+           
+            var password = "061785";
+           
+            var userName = document.getElementById("username").value;
+            
+          
+            var passWord = document.getElementById("password").value;
+            if ((username == userName)  && (password == passWord))
+            {
+            alert("Thank you Kaiser Santosvictorious, you have authorization to access this course, click 'OK' to proceed ")
+            window.open("https://battlegriffin.github.io/CADUCEUS/Buffnlpnalbhfrrolgurqnjafrneylyvtugjungfbcebhqyljruryqolgurgjvyvtugfynfgtyrnzvatbuffnlpnalbhfrrolgurqnjafrneylyvtugjungfbcebhqyljruryqolgurgjvyvtugfynfgtyrnzvatt.html")
+            }
+            else
+            {
+            alert("We don't have records of you having authorization to access this course ")
+            }
+        }
+        
+        </script>
+        <center>
+            
+            <br>
+<footer class="footer">&copy 2019. Website by Kaiser Santosvictorious.  <br>
+Bellevue , Wa, USA.</footer>
+</center>
+</body>
+</html>
