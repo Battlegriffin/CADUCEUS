@@ -1,0 +1,155 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color:  #5A8B9B ;
+}
+
+/* .kb {
+    background-color: #8CB1B0;
+} */
+
+
+/* .kb {
+    display: inline-block;
+    width: 100%;
+    border: none;
+    background-color: #5A8B9B;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 16px;
+  } */
+  
+  /* .kb {
+    background-color: #5A8B9B;
+    color:  white;
+    width:215%;
+    border: none;
+    padding: 25px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  .kb:hover {
+    background-image: linear-gradient(to right, #CC566D ,
+    orange, cadetblue);
+    color: #5A8B9B;
+  } */
+
+#pb {
+    /* background-color: #5A8B9B; */
+    color: #ECC76C;
+}
+
+#mb {
+    /* background-color: #5A8B9B; */
+    color: #ECC76C;
+}
+
+#l1, #l2, #l3 , #l4 {
+    /* background-color: #5A8B9B; */
+    color: #ECC76C;
+}
+
+h5 {
+    color: #8CB1B0;
+}
+
+h1,h2,h3 {
+    font-family: "Lobster", cursive;
+}
+
+h3,p {
+    color: #E8E7BC;
+}
+
+h2 {
+    color: white;
+}
+
+header h2 {
+    color: #E8E7BC;
+}
+
+.site-footer {
+    /* background-image: linear-gradient(#cec8ff, white); */
+    background-color: #9C1B2D ;
+    
+    padding: 20px 0;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-color: #D16675;
+    /* background-image: linear-gradient(to right, #5637dd, 
+    orange, #60106b); */
+    color: #1F2A54     ;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color:  #CC566D ;
+
+}
+
+.tab-content {
+
+border: 1px solid #ddd;
+border-top: none;
+padding: 10px;
+border-radius: 7px;
+
+
+
+
+}
+
+.carousel-caption {
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+}
+
+.carousel {
+    /* border: solid #D16675; */
+    border: solid #5A8B9B;
+    border-radius: 7px;
+}
+
+.carousel-img {
+    border: solid black;
+}
+
+#carouselButton {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+img {
+    border-radius: 15px;
+}
+
+#tx, #tx1, #tx2, #tx3, #tx4, #tx5, #tx6 {
+    font-weight: bold;
+}
+
+h5, address, #n, #m, span {
+    font-weight: bold;
+}
+
+.table-striped {
+    border-radius: 7px;
+}
